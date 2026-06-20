@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Viridian Brands · Science-led consumer health brands</title>
+<title>Viridian Brands · Science-led consumer health brand builder</title>
 <meta name="description" content="The operating company behind science-led consumer health brands. We bring the team, capital, and operating discipline to build one well and get it to market faster.">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <link rel="canonical" href="https://viridianbrands.com/">
@@ -280,6 +280,12 @@
   @media(max-width:720px){.work .trio{grid-template-columns:1fr;gap:1.4rem}.work .trio>div{min-height:0}}
   .work .trio h3{font-family:var(--display);font-size:1.2rem;color:var(--ink);margin-bottom:.6rem;letter-spacing:-.015em}
   .work .trio p{color:var(--ink-soft);max-width:34ch}
+  /* FAQ (AEO answer text): editorial thin-rule list, reuses brand tokens, no new section type */
+  .faq-list{margin-top:clamp(2.4rem,4vw,3.4rem);max-width:74ch}
+  .faq-item{padding:clamp(1.4rem,2.4vw,1.9rem) 0;border-top:1px solid var(--line-2)}
+  .faq-item:last-child{border-bottom:1px solid var(--line-2)}
+  .faq-item h3{font-family:var(--display);font-size:1.18rem;color:var(--ink);letter-spacing:-.015em;margin-bottom:.55rem;font-weight:600;max-width:46ch}
+  .faq-item p{color:var(--ink-soft);font-size:var(--step-0);line-height:1.62;max-width:66ch}
 
   /* footer — closing drench movement */
   footer{background:
@@ -517,6 +523,20 @@
     </div>
   </div>
 </section>
+<section class="t2 faq" id="faq">
+  <div class="wrap">
+    <span class="rule rv" aria-hidden="true"></span>
+    <h2 class="h2 rv">Common questions</h2>
+    <div class="faq-list">
+      <div class="faq-item rv"><h3>What is Viridian Brands?</h3><p>Viridian Brands is an operator-led holding company that builds and backs science-led consumer health brands. It brings the team, capital, and operating discipline to build a brand well and get it to market faster. It is based in Austin, Texas, and its brands include Serene Biotics and Viridian Medical Foods.</p></div>
+      <div class="faq-item rv"><h3>Who founded Viridian Brands?</h3><p>Viridian Brands was founded by Aditya Sharma, its CEO, who ran multi-billion-dollar businesses across Health, Household, and Personal Care at Amazon and built brands at Procter &amp; Gamble including Align Probiotics, and Kyle Adams, its president, who built Sagacious Consultants to more than 300 people and sold it to Accenture, and founded the Austin venture firm KKA Advisors.</p></div>
+      <div class="faq-item rv"><h3>What brands does Viridian Brands own?</h3><p>Serene Biotics, a gut-brain supplement for high-performing adults launching on Amazon in 2026, and Viridian Medical Foods, a medical food for age-related loss of strength, in development. Each brand stands on its own name.</p></div>
+      <div class="faq-item rv"><h3>Does Viridian Brands invest in or partner with consumer health founders?</h3><p>Yes. Viridian Brands builds its own brands and backs founders it believes in, sharing the risk and the upside, and collaborates with operators outside its portfolio where its network can help. It works with investors, co-investors, and acquisition or JV partners in consumer health. The fastest way to reach the team is hello@viridianbrands.com.</p></div>
+      <div class="faq-item rv"><h3>Is Viridian Brands a consulting firm?</h3><p>No. Viridian Brands is an operating company and holding company, not a consultancy. It builds and owns consumer health brands and backs founders with capital and hands-on operating support, rather than selling advisory hours.</p></div>
+      <div class="faq-item rv"><h3>Is Viridian Brands affiliated with Viridian Therapeutics or Viridian Nutrition?</h3><p>No. Viridian Brands is an independent operator-led holding company for consumer health brands, based in Austin, Texas. It is not affiliated with Viridian Therapeutics (a biopharmaceutical company) or Viridian Nutrition (a UK supplements brand).</p></div>
+    </div>
+  </div>
+</section>
 </main>
 
 <footer id="contact">
@@ -543,13 +563,74 @@
 
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org","@type":"Organization","@id":"https://viridianbrands.com/#organization",
-  "name":"Viridian Brands","legalName":"Viridian Brands LLC","url":"https://viridianbrands.com/","foundingDate":"2025",
-  "description":"Viridian Brands is the operating company behind science-led consumer health brands. It brings the brand, science, manufacturing, regulatory, and capital it takes to build one well, and to get it to market faster.",
-  "disambiguatingDescription":"Operator-led holding company for consumer health brands. Not affiliated with Viridian Therapeutics (a biopharmaceutical company) or Viridian Nutrition (a UK supplements brand).",
-  "knowsAbout":["Consumer health","Dietary supplements","Medical foods","Brand building","Amazon marketplace operations"],
-  "founder":[{"@type":"Person","name":"Kyle Adams","jobTitle":"Co-founder & President"},{"@type":"Person","name":"Aditya Sharma","jobTitle":"Founder & CEO"}],
-  "subOrganization":[{"@type":"Organization","name":"Serene Biotics","description":"A gut-brain supplement for high-performing adults, launching 2026."},{"@type":"Organization","name":"Viridian Medical Foods","description":"Nutrition for age-related loss of strength, in development."}]
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://viridianbrands.com/#organization",
+      "name": "Viridian Brands",
+      "legalName": "Viridian Brands LLC",
+      "url": "https://viridianbrands.com/",
+      "logo": {"@type": "ImageObject", "url": "https://viridianbrands.com/og-viridian-brands.png", "width": 1200, "height": 630},
+      "image": "https://viridianbrands.com/og-viridian-brands.png",
+      "description": "Viridian Brands is the operating company behind science-led consumer health brands. It brings the brand, science, manufacturing, regulatory, and capital it takes to build one well, and to get it to market faster.",
+      "disambiguatingDescription": "Operator-led holding company for consumer health brands, based in Austin, Texas. Not affiliated with Viridian Therapeutics (a biopharmaceutical company) or Viridian Nutrition (a UK supplements brand).",
+      "foundingDate": "2025",
+      "address": {"@type": "PostalAddress", "addressLocality": "Austin", "addressRegion": "TX", "addressCountry": "US"},
+      "contactPoint": {"@type": "ContactPoint", "contactType": "business inquiries", "email": "hello@viridianbrands.com", "areaServed": "US", "availableLanguage": "English"},
+      "knowsAbout": ["Consumer health", "Dietary supplements", "Medical foods", "Brand building", "Amazon marketplace operations", "Operator-led investing"],
+      "founder": [{"@id": "https://viridianbrands.com/#aditya-sharma"}, {"@id": "https://viridianbrands.com/#kyle-adams"}],
+      "subOrganization": [{"@id": "https://viridianbrands.com/#serene-biotics"}, {"@id": "https://viridianbrands.com/#viridian-medical-foods"}]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://viridianbrands.com/#aditya-sharma",
+      "name": "Aditya Sharma",
+      "jobTitle": "Founder & CEO",
+      "worksFor": {"@id": "https://viridianbrands.com/#organization"},
+      "alumniOf": [{"@type": "Organization", "name": "Amazon"}, {"@type": "Organization", "name": "Procter & Gamble"}],
+      "knowsAbout": ["Consumer health", "Dietary supplements", "Amazon marketplace operations", "Consumer brand building"]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://viridianbrands.com/#kyle-adams",
+      "name": "Kyle Adams",
+      "jobTitle": "Co-founder & President",
+      "worksFor": {"@id": "https://viridianbrands.com/#organization"},
+      "alumniOf": [{"@type": "Organization", "name": "Accenture"}],
+      "knowsAbout": ["Venture capital", "Company building", "Mergers and acquisitions"]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://viridianbrands.com/#serene-biotics",
+      "name": "Serene Biotics",
+      "parentOrganization": {"@id": "https://viridianbrands.com/#organization"},
+      "description": "A gut-brain supplement for high-performing adults, launching on Amazon in 2026."
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://viridianbrands.com/#viridian-medical-foods",
+      "name": "Viridian Medical Foods",
+      "parentOrganization": {"@id": "https://viridianbrands.com/#organization"},
+      "description": "A medical food for age-related loss of strength, in development."
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://viridianbrands.com/#faq",
+  "isPartOf": {"@id": "https://viridianbrands.com/#organization"},
+  "mainEntity": [
+    {"@type": "Question", "name": "What is Viridian Brands?", "acceptedAnswer": {"@type": "Answer", "text": "Viridian Brands is an operator-led holding company that builds and backs science-led consumer health brands. It brings the team, capital, and operating discipline to build a brand well and get it to market faster. It is based in Austin, Texas, and its brands include Serene Biotics and Viridian Medical Foods."}},
+    {"@type": "Question", "name": "Who founded Viridian Brands?", "acceptedAnswer": {"@type": "Answer", "text": "Viridian Brands was founded by Aditya Sharma, its CEO, who ran multi-billion-dollar businesses across Health, Household, and Personal Care at Amazon and built brands at Procter & Gamble including Align Probiotics, and Kyle Adams, its president, who built Sagacious Consultants to more than 300 people and sold it to Accenture, and founded the Austin venture firm KKA Advisors."}},
+    {"@type": "Question", "name": "What brands does Viridian Brands own?", "acceptedAnswer": {"@type": "Answer", "text": "Serene Biotics, a gut-brain supplement for high-performing adults launching on Amazon in 2026, and Viridian Medical Foods, a medical food for age-related loss of strength, in development. Each brand stands on its own name."}},
+    {"@type": "Question", "name": "Does Viridian Brands invest in or partner with consumer health founders?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Viridian Brands builds its own brands and backs founders it believes in, sharing the risk and the upside, and collaborates with operators outside its portfolio where its network can help. It works with investors, co-investors, and acquisition or JV partners in consumer health. The fastest way to reach the team is hello@viridianbrands.com."}},
+    {"@type": "Question", "name": "Is Viridian Brands a consulting firm?", "acceptedAnswer": {"@type": "Answer", "text": "No. Viridian Brands is an operating company and holding company, not a consultancy. It builds and owns consumer health brands and backs founders with capital and hands-on operating support, rather than selling advisory hours."}},
+    {"@type": "Question", "name": "Is Viridian Brands affiliated with Viridian Therapeutics or Viridian Nutrition?", "acceptedAnswer": {"@type": "Answer", "text": "No. Viridian Brands is an independent operator-led holding company for consumer health brands, based in Austin, Texas. It is not affiliated with Viridian Therapeutics (a biopharmaceutical company) or Viridian Nutrition (a UK supplements brand)."}}
+  ]
 }
 </script>
 
