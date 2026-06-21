@@ -134,6 +134,7 @@
   .mark::before{top:0}.mark::after{bottom:0}
   nav.main{display:flex;gap:2.1rem;align-items:center;font-size:.88rem;font-weight:500}
   nav.main a{color:var(--ink-soft);position:relative;padding-block:.2rem}
+  @media (hover:none) and (min-width:861px){nav.main a{min-height:44px;display:inline-flex;align-items:center}}
   nav.main a:not(.cta)::after{content:"";position:absolute;left:0;right:100%;bottom:-1px;height:1px;background:var(--brass);transition:right .35s var(--ease-expo);opacity:.85}
   nav.main a:not(.cta):hover{color:var(--ink)} nav.main a:not(.cta):hover::after{right:0}
   nav.main a.cta{padding:.5rem 1rem;border-radius:999px;border:1px solid var(--line-3);color:var(--ink);font-weight:600;transition:background .35s var(--ease-quart),color .35s var(--ease-quart),border-color .35s}
