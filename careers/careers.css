@@ -1,0 +1,139 @@
+/* Careers shares the main navigation and uses a readable, text-first layout. */
+.careers-page main{font-family:var(--sans,'DM Sans',Arial,sans-serif);font-size:17px;line-height:1.65}
+.careers-page main h1,.careers-page main h2,.careers-page main h3{font-family:var(--sans,'DM Sans',Arial,sans-serif);font-style:normal;font-weight:700;letter-spacing:-.035em;color:var(--ink,#153c2d)}
+.careers-page main em{font:inherit}
+.careers-page main .text-link,.careers-page main .button{font-size:16px;line-height:1.5;min-height:48px}
+.careers-page main .text-link{gap:12px}
+.career-breadcrumb{display:flex;flex-wrap:wrap;gap:10px;align-items:center;font-size:16px;line-height:1.5;color:var(--muted,#546159);margin-bottom:36px}
+.career-breadcrumb a{display:inline-flex;align-items:center;min-height:44px;padding:10px 0;text-decoration:underline;text-decoration-color:transparent;text-underline-offset:4px}
+.career-breadcrumb a:hover{text-decoration-color:currentColor}
+.career-breadcrumb>span[aria-hidden]{color:var(--muted,#546159)}
+.careers-page .primary-nav a[aria-current="page"]{text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:2px}
+.careers-page .footer-main nav a[aria-current="page"]{text-decoration:underline;text-underline-offset:4px}
+.careers-intro{padding-top:24px;padding-bottom:36px}
+.careers-intro .career-breadcrumb{margin-bottom:24px}
+.careers-intro-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:64px;align-items:center}
+.careers-intro h1,.role-hero h1{font-size:clamp(42px,5.3vw,76px);line-height:1.05;margin-top:14px;max-width:850px;text-wrap:balance}
+.careers-intro-note{max-width:500px;justify-self:end}
+.careers-intro-note>p{font-size:19px;line-height:1.65;color:var(--muted,#546159)}
+.careers-intro-note>.text-link{margin-top:18px}
+.open-roles{padding-top:44px;padding-bottom:52px;background:var(--cream,#eeede3)}
+.jobs-heading{display:block;margin-bottom:24px}
+.jobs-heading h2{font-size:clamp(28px,3.3vw,44px);line-height:1.15}
+.job-listing{display:grid;grid-template-columns:minmax(0,1fr) minmax(240px,.58fr);gap:30px;align-items:center;padding:32px;background:var(--paper,#f5f3eb);border:1px solid var(--line,#cdd1c6);border-radius:8px;transition:border-color .2s,background .2s}
+.job-listing:hover{border-color:var(--ink,#153c2d);background:#fff}
+.job-listing h3{font-size:clamp(26px,2.75vw,38px);line-height:1.2;margin:10px 0 12px;letter-spacing:-.03em}
+.job-listing>div>p{font-size:16px;color:var(--muted,#546159);line-height:1.65}
+.job-listing p>span{padding:0 6px}
+.job-listing-right{text-align:right}
+.job-listing-right>p{font-weight:500;color:var(--ink,#153c2d)!important}
+.job-link-label{display:inline-flex;gap:16px;align-items:center;font-size:16px;font-weight:700;min-height:44px;margin-top:14px;padding:6px 0;border-bottom:1px solid currentColor}
+.job-link-label>span{font-size:22px;line-height:1}
+.careers-about{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:64px;padding-top:56px;padding-bottom:64px}
+.careers-about h2{font-size:clamp(30px,3.3vw,44px);line-height:1.15}
+.careers-about-copy>p{font-size:17px;color:var(--muted,#546159);line-height:1.75;max-width:68ch}
+.careers-about-copy>.text-link{margin-top:18px}
+.role-hero{padding-top:24px;padding-bottom:42px;border-bottom:1px solid var(--line,#cdd1c6)}
+.role-hero .career-breadcrumb{margin-bottom:30px}
+.role-hero h1{margin-top:12px;font-size:clamp(40px,5vw,70px);line-height:1.08}
+.role-facts{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:26px;font-size:16px;line-height:1.5;color:var(--muted,#546159)}
+.role-facts p{padding:0}
+.role-facts p:last-child{color:var(--ink,#153c2d);font-weight:700}
+.role-hero-bottom{display:flex;align-items:center;gap:24px;margin-top:26px}
+.role-hero-bottom>p{max-width:440px;font-size:16px;color:var(--muted,#546159);line-height:1.6}
+.role-layout{display:grid;grid-template-columns:220px minmax(0,1fr);gap:70px;padding-top:48px;padding-bottom:56px;max-width:1400px;margin:auto}
+.role-aside-inner{position:sticky;top:calc(var(--header-height,80px) + 20px);padding-bottom:20px}
+.role-aside nav{display:flex;flex-direction:column;align-items:stretch;gap:0}
+.role-aside nav a{font-size:16px;color:var(--muted,#546159);padding:10px 0;min-height:44px;line-height:1.5}
+.role-aside nav a:hover{color:var(--ink,#153c2d);text-decoration:underline;text-underline-offset:4px}
+.role-aside nav a:last-child{color:var(--ink,#153c2d)}
+.role-aside nav a>span{margin-left:8px}
+.role-aside .text-link{margin-top:20px;gap:10px}
+.role-copy{max-width:72ch;min-width:0}
+.role-copy>section{padding-top:34px;margin-top:34px;border-top:1px solid var(--line,#cdd1c6);scroll-margin-top:0}
+.role-copy>section:first-child{padding-top:0;margin-top:0;border-top:0}
+.role-copy h2{font-size:clamp(27px,2.5vw,36px);line-height:1.2;margin-bottom:20px;text-wrap:balance}
+.role-copy p,.role-copy li{font-size:17px;line-height:1.75;color:var(--muted,#546159)}
+.role-copy p+p{margin-top:18px}
+.role-copy p>a{text-decoration:underline;text-underline-offset:4px;overflow-wrap:anywhere}
+.role-list{list-style:disc;margin:0;padding-left:22px}
+.role-list li{padding-left:5px;margin-top:14px}
+.role-list li:first-child{margin-top:0}
+.role-list li::marker{color:var(--ink,#153c2d)}
+.role-copy>section.compensation-panel{background:var(--cream,#eeede3);padding:28px;border:1px solid var(--line,#cdd1c6);border-radius:8px;margin-top:34px}
+.compensation-panel p{color:var(--ink,#153c2d)}
+.application-callout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:center;background:var(--dark,#153c2d);color:var(--paper,#f5f3eb);padding-top:48px;padding-bottom:48px}
+.careers-page .application-callout h2{color:var(--paper,#f5f3eb);font-size:clamp(32px,3.8vw,50px);line-height:1.15;margin:14px 0 18px}
+.application-callout>div>p{font-size:17px;line-height:1.7;max-width:44ch;color:#e2e8df}
+.application-actions{justify-self:end;max-width:460px}
+.application-actions .button{min-width:250px}
+.application-actions>p{margin-top:20px}
+.application-actions p>a{text-decoration:underline;text-underline-offset:4px;overflow-wrap:anywhere}
+.careers-page .application-callout a:focus-visible{outline-color:var(--lime,#e2edb4)}
+@media(max-width:1100px){
+ .careers-intro-grid,.careers-about{gap:40px}
+ .role-layout{grid-template-columns:200px minmax(0,1fr);gap:40px}
+ .job-listing{grid-template-columns:minmax(0,1fr) 250px;padding:26px;gap:22px}
+ .application-callout{gap:40px}
+}
+@media(max-width:850px){
+ .careers-intro-grid{grid-template-columns:1fr;gap:20px}
+ .careers-intro-note{justify-self:start;max-width:620px}
+ .careers-intro-note>p{font-size:18px}
+ .careers-intro h1{font-size:clamp(40px,6.5vw,60px)}
+ .role-layout{grid-template-columns:1fr;gap:32px;max-width:850px}
+ .role-aside-inner{position:static;padding:22px;background:var(--cream,#eeede3);border:1px solid var(--line,#cdd1c6);border-radius:8px}
+ .role-aside nav{display:grid;grid-template-columns:1fr 1fr;gap:0 24px}
+ .role-aside .text-link{margin-top:10px}
+ .role-copy{max-width:100%}
+ .careers-about{grid-template-columns:1fr;gap:24px}
+ .careers-about h2 br{display:none}
+ .careers-about-copy>p{max-width:none}
+ .job-listing{grid-template-columns:1fr}
+ .job-listing-right{text-align:left;display:flex;justify-content:space-between;align-items:center;gap:20px}
+ .job-link-label{margin-top:0;flex-shrink:0}
+}
+@media(max-width:600px){
+ .career-breadcrumb{font-size:15px;gap:8px;margin-bottom:28px}
+ .careers-intro{padding-top:16px;padding-bottom:24px}
+ .careers-intro .career-breadcrumb{margin-bottom:20px}
+ .careers-intro-grid{gap:18px}
+ .careers-intro h1{font-size:36px;line-height:1.1;margin-top:10px}
+ .careers-intro-note>p{font-size:16px;line-height:1.65}
+ .careers-intro-note>.text-link{margin-top:6px}
+ .open-roles{padding-top:26px;padding-bottom:32px}
+ .jobs-heading{display:block;margin-bottom:20px}
+ .jobs-heading h2{font-size:30px}
+ .job-listing{padding:22px 20px;gap:16px}
+ .job-listing h3{font-size:28px;line-height:1.2}
+ .job-listing-right{display:block}
+ .job-link-label{margin-top:10px}
+ .job-listing p>span{display:inline;padding:0 3px}
+ .careers-about{padding-top:36px;padding-bottom:40px;gap:20px}
+ .careers-about h2{font-size:30px}
+ .careers-about-copy>p{font-size:16px;line-height:1.75}
+ .role-hero{padding-top:18px;padding-bottom:32px}
+ .role-hero .career-breadcrumb{margin-bottom:24px}
+ .role-hero h1{font-size:clamp(34px,8.9vw,50px);line-height:1.1}
+ .role-facts{flex-direction:column;gap:10px;margin-top:22px}
+ .role-hero-bottom{align-items:flex-start;flex-direction:column;gap:14px;margin-top:22px}
+ .role-hero-bottom>.button{width:100%;max-width:400px}
+ .role-layout{padding-top:30px;padding-bottom:36px;gap:30px}
+ .role-aside-inner{padding:18px}
+ .role-aside nav{gap:0 16px}
+ .role-aside nav a{font-size:16px;line-height:1.45}
+ .role-copy h2{font-size:28px;line-height:1.2;margin-bottom:18px}
+ .role-copy p,.role-copy li{font-size:16px;line-height:1.75}
+ .role-copy>section{margin-top:28px;padding-top:28px}
+ .role-list{padding-left:20px}
+ .role-list li{padding-left:3px;margin-top:12px}
+ .role-copy>section.compensation-panel{padding:22px 20px;margin-top:28px}
+ .application-callout{grid-template-columns:1fr;gap:24px;padding-top:36px;padding-bottom:38px}
+ .careers-page .application-callout h2{font-size:34px;margin:12px 0 16px}
+ .application-actions{justify-self:start;max-width:100%}
+ .application-callout>div>p{font-size:16px}
+ .application-actions .button{width:100%;min-width:0}
+ .application-actions>p{margin-top:18px}
+}
+@media(prefers-reduced-motion:reduce){.job-listing{transition:none}}
+.careers-intro h1{margin-top:0}.job-listing h3{margin-top:0}.careers-page .application-callout h2{margin-top:0}
