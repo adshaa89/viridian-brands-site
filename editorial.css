@@ -28,8 +28,7 @@ a:focus-visible,button:focus-visible{outline:3px solid #a17a35;outline-offset:6p
 .primary-nav>a:hover{text-decoration:underline;text-underline-offset:7px}
 .menu-toggle{display:none}
 .hero{padding-top:60px;padding-bottom:72px;background:var(--ink);color:var(--paper)}
-.hero h1{font-size:clamp(76px,7.3vw,118px);line-height:1.02;letter-spacing:-.04em}
-.hero h1>span{display:block}
+.hero h1{font-size:clamp(56px,5.65vw,96px);line-height:1.06;letter-spacing:-.04em;text-wrap:balance}
 .portfolio-scene{width:100%;overflow:hidden}
 .portfolio-scene picture,.portfolio-scene img{display:block;width:100%;height:auto}
 .portfolio{padding-top:58px;padding-bottom:64px}
@@ -74,7 +73,7 @@ a:focus-visible,button:focus-visible{outline:3px solid #a17a35;outline-offset:6p
 @media(min-width:1600px){.section-shell,.site-header{padding-left:max(var(--gutter),calc((100vw - 1424px)/2));padding-right:max(var(--gutter),calc((100vw - 1424px)/2))}}
 @media(max-width:1000px){
  .wordmark{font-size:31px}.wordmark>span{font-size:15px}.primary-nav{gap:18px;font-size:14px}
- .hero{padding-top:48px;padding-bottom:56px}.hero h1{font-size:clamp(64px,7.6vw,92px)}
+ .hero{padding-top:48px;padding-bottom:56px}
  .portfolio{padding-top:40px;padding-bottom:44px}.brand-logo,.brand-wordmark{min-height:100px}
  .brand-logo-serene img{width:190px}.brand-logo-tooth-wizard img{width:140px}.brand-logo-corus img{width:220px}
  .team{padding-top:72px;padding-bottom:72px}
@@ -92,7 +91,7 @@ a:focus-visible,button:focus-visible{outline:3px solid #a17a35;outline-offset:6p
  .js .menu-toggle{display:flex}.js .site-header{height:var(--header-height);flex-wrap:nowrap}
  .js .primary-nav{position:absolute;top:100%;left:0;padding:8px var(--gutter) 18px;background:var(--ink);display:none;max-height:calc(100dvh - var(--header-height));overflow-y:auto;border-bottom:1px solid var(--light-line)}
  .js .primary-nav[data-open=true]{display:flex}body:not(.js) .site-header{position:static}
- .hero{padding-top:28px;padding-bottom:40px}.hero h1{font-size:clamp(48px,13.6vw,76px);line-height:1.045;letter-spacing:-.045em}
+ .hero{padding-top:28px;padding-bottom:40px}.hero h1{font-size:clamp(40px,11.1vw,56px);line-height:1.06;letter-spacing:-.05em}
  .portfolio{padding-top:32px;padding-bottom:36px}.portfolio-grid{gap:18px}
  .brand-logo,.brand-wordmark{min-height:72px}
  .brand-logo-serene img{width:110px}.brand-logo-tooth-wizard img{width:84px}.brand-logo-corus img{width:126px}
@@ -102,5 +101,5 @@ a:focus-visible,button:focus-visible{outline:3px solid #a17a35;outline-offset:6p
  .contact{padding-top:56px;padding-bottom:56px}.contact-email{font-size:clamp(23px,6.5vw,34px);margin-top:24px;letter-spacing:-.035em}
  .site-footer{padding-bottom:24px}.footer-top{align-items:flex-start;flex-direction:column;gap:18px;padding-top:24px}.footer-top nav{font-size:15px;gap:30px}.footer-bottom{gap:8px 24px;font-size:14px;margin-top:18px}
 }
-@media(max-width:360px){:root{--gutter:20px}.wordmark{font-size:28px}.wordmark>span{font-size:14px}.hero h1{font-size:46px}.portfolio-grid{gap:14px}.person h3{font-size:21px}.person-bio{font-size:16px}.contact-email{font-size:22px}}
+@media(max-width:360px){:root{--gutter:20px}.wordmark{font-size:28px}.wordmark>span{font-size:14px}.portfolio-grid{gap:14px}.person h3{font-size:21px}.person-bio{font-size:16px}.contact-email{font-size:22px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
