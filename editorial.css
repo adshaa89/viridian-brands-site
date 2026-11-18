@@ -53,6 +53,8 @@ a:focus-visible,button:focus-visible{outline:3px solid #a17a35;outline-offset:6p
 .team-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:80px;margin-top:48px}
 .person{min-width:0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:center}
 .person-portrait{width:100%;max-width:300px;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%;filter:brightness(1.035);mix-blend-mode:darken}
+.aditya-portrait-frame{display:block;width:100%;max-width:300px;aspect-ratio:4/5;overflow:hidden}
+.aditya-portrait-frame .person-portrait{height:100%;transform:scale(1.035);transform-origin:50% 100%}
 .person h3{font-size:32px;letter-spacing:-.035em;margin-top:0}
 .person-role{font-size:17px;margin-top:6px;color:var(--muted)}
 .person-bio{font-size:19px;line-height:1.5;max-width:32ch;margin-top:14px}
@@ -96,7 +98,7 @@ a:focus-visible,button:focus-visible{outline:3px solid #a17a35;outline-offset:6p
  .brand-logo,.brand-wordmark{min-height:72px}
  .brand-logo-serene img{width:110px}.brand-logo-tooth-wizard img{width:84px}.brand-logo-corus img{width:126px}
  .team{padding-top:56px;padding-bottom:56px}h2{font-size:44px;max-width:14ch}
- .team-grid{gap:24px;margin-top:32px}.person-portrait{max-width:none}.person h3{font-size:23px;line-height:1.15;margin-top:18px}.person-role{font-size:15px;line-height:1.4;margin-top:8px}.person-bio{font-size:15px;line-height:1.4;margin-top:12px}
+ .team-grid{gap:24px;margin-top:32px}.person-portrait,.aditya-portrait-frame{max-width:none}.person h3{font-size:23px;line-height:1.15;margin-top:18px}.person-role{font-size:15px;line-height:1.4;margin-top:8px}.person-bio{font-size:15px;line-height:1.4;margin-top:12px}
  .role-line{display:block;margin-top:40px;padding-top:24px}.role-line h3{font-size:23px}.role-line .text-link{font-size:17px;margin-top:12px}
  .contact{padding-top:56px;padding-bottom:56px}.contact-email{font-size:clamp(23px,6.5vw,34px);margin-top:24px;letter-spacing:-.035em}
  .site-footer{padding-bottom:24px}.footer-top{align-items:flex-start;flex-direction:column;gap:18px;padding-top:24px}.footer-top nav{font-size:15px;gap:30px}.footer-bottom{gap:8px 24px;font-size:14px;margin-top:18px}
