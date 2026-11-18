@@ -54,7 +54,7 @@ a:focus-visible,button:focus-visible{outline:3px solid #a17a35;outline-offset:6p
 .person{min-width:0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:center}
 .person-portrait{width:100%;max-width:300px;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%;filter:brightness(1.035);mix-blend-mode:darken}
 .aditya-portrait-frame{display:block;width:100%;max-width:300px;aspect-ratio:4/5;overflow:hidden}
-.aditya-portrait-frame .person-portrait{height:100%;object-fit:contain;object-position:center bottom;transform:none}
+.aditya-portrait-frame .person-portrait{height:100%;transform:scale(1.035);transform-origin:50% 100%}
 .person h3{font-size:32px;letter-spacing:-.035em;margin-top:0}
 .person-role{font-size:17px;margin-top:6px;color:var(--muted)}
 .person-bio{font-size:19px;line-height:1.5;max-width:32ch;margin-top:14px}
